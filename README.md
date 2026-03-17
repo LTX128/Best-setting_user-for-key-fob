@@ -6,6 +6,12 @@ Optimized for 433.92 MHz key fob capture at maximum range with tight noise filte
 
 ---
 
+## Best Firmware for this setting_user
+
+ARF Firmware - https://arf.d4c1.com/
+
+---
+
 ## Installation
 
 Drop `setting_user` into:
