@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="flipper.png" alt="Auto-K6 Basic Version Screenshot" width="700">
+  <img src="flipper.png" alt="Flipper Zero" width="700">
 </p>
 
 # Flipper Zero - SubGHz setting_user
