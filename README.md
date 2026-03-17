@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="flipper.png" alt="Flipper Zero" width="700">
-</p>
-
 # Flipper Zero - SubGHz setting_user
 
 Custom SubGHz settings file for Flipper Zero (compatible Momentum, ARF Firmware, Unleashed, RogueMaster).
@@ -73,3 +69,9 @@ If you are far from the target or in a noisy environment, preset 2 will outperfo
 ## Credits
 
 By LTX
+
+<p align="center">
+  <img src="flipper.png" alt="Flipper Zero" width="700">
+</p>
+
+---
