@@ -68,7 +68,7 @@ If you are far from the target or in a noisy environment, preset 2 will outperfo
 
 ## Credits
 
-# BY LTX
+## ---------- BY LTX ----------
 
 <p align="center">
   <img src="flipper.png" alt="Flipper Zero" width="700">
