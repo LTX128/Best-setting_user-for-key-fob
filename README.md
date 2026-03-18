@@ -40,11 +40,11 @@ Each brand preset is tuned to the actual modulation, data rate and deviation use
 
 | Preset | Modulation | Data rate | Frequency | Notes |
 |---|---|---|---|---|
+| VAG 434 | OOK | 2.4 kBaud | **434.42 MHz** | VW, Skoda, Seat - use with 434420000 |
 | BMW - Mini | 2-FSK | 4.8 kBaud | 433.92 MHz | F/G-series, all Mini |
 | Mercedes-Benz | 2-FSK | 9.6 kBaud | 433.92 MHz | W212/W213/W205 and newer |
 | Honda | OOK | 1.2 kBaud | 433.92 MHz | Civic, CR-V, Jazz EU |
 | AUDI - new | OOK | 2.4 kBaud | 433.92 MHz | All VAG platform EU (2009+) |
-| VAG 434 | OOK | 2.4 kBaud | **434.42 MHz** | VW, Skoda, Seat pre-2009 — use with 434420000 |
 | Land Rover | OOK | 4.8 kBaud | 433.92 MHz | Defender, Discovery, Range Rover |
 | Toyota - Lexus | OOK | 4.8 kBaud | 433.92 MHz | Yaris, RAV4, Prius, Lexus IS/NX |
 | Subaru | OOK | 1.2 kBaud | 433.92 MHz | Impreza, Forester, Outback EU |
