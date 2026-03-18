@@ -6,7 +6,7 @@ Optimized for key fob capture at maximum range with tight noise filtering.
 
 ## Best Firmware for this setting_user
 
-🔴 ARF Firmware - https://arf.d4c1.com/ 🔴
+**🔴 ARF Firmware - https://arf.d4c1.com/ 🔴**
 
 ---
 
@@ -68,7 +68,7 @@ Each brand preset is tuned to the actual modulation, data rate and deviation use
 
 All vehicle presets include the CC1101 TEST registers (`0x2C 0x2D 0x2E`) and max LNA gain configuration.
 
-#### VAG 434 - details
+#### VAG 434 - Details
 
 This preset is specifically built for older VAG vehicles (VW Golf, Polo, Passat, Tiguan, Skoda, Seat) that transmit on **434.42 MHz** instead of 433.92 MHz. It uses the same architecture as preset 2: 58 kHz bandwidth, active TEST registers, max LNA gain, 64-sample OOK averaging and 8 dB hysteresis on the AGC decision threshold. It will reject parking noise the same way preset 2 does.
 
