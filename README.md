@@ -4,6 +4,10 @@ Optimized for key fob capture at maximum range with tight noise filtering.
 
 ---
 
+**❗ For all these presets, I highly recommend using an external CC1101 antenna, otherwise it might not work properly. ❗**
+
+---
+
 ## Best Firmware for this setting_user
 
 **🔴 ARF Firmware - https://arf.d4c1.com/ 🔴**
