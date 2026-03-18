@@ -8,10 +8,10 @@ Optimized for 433.92 MHz and 434.42 MHz key fob capture at maximum range with ti
 
 ## Installation
 
-Drop `setting_user.txt` into:
+Drop `setting_user` into:
 
 ```
-SD Card/subghz/assets/setting_user.txt
+SD Card/subghz/assets/setting_user
 ```
 
 Restart the Flipper or reload SubGHz.
