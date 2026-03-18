@@ -167,7 +167,7 @@ If you are far from the target or in a noisy environment (parking lots, shopping
 
 ## Credits
 
-BY LTX
+# BY LTX
 
 ---
 
