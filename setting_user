@@ -62,6 +62,10 @@ Custom_preset_name: 2
 Custom_preset_module: CC1101
 Custom_preset_data: 02 0D 0B 06 07 04 08 32 10 F8 11 32 12 30 13 00 14 00 15 00 17 0C 18 18 19 16 1B 07 1C 00 1D B1 20 FB 21 B6 22 11 2C 81 2D 35 2E 09 00 00 00 C0 00 00 00 00 00 00
 
+Custom_preset_name: VAG 434
+Custom_preset_module: CC1101
+Custom_preset_data: 02 0D 0B 06 07 04 08 32 10 F6 11 32 12 30 13 00 14 00 15 00 17 0C 18 18 19 16 1B 07 1C 00 1D B1 20 FB 21 B6 22 11 2C 81 2D 35 2E 09 00 00 00 C0 00 00 00 00 00 00
+
 #Custom_preset_name: AM_1
 #Custom_preset_module: CC1101
 #Custom_preset_data: 02 0D 03 07 08 32 0B 06 14 00 13 00 12 30 11 32 10 17 18 18 19 18 1D 91 1C 00 1B 07 20 FB 22 11 21 B6 00 00 00 C0 00 00 00 00 00 00
@@ -120,10 +124,6 @@ Custom_preset_module: CC1101
 Custom_preset_data: 02 0D 0B 06 08 32 07 04 14 00 13 02 12 04 11 83 10 67 15 24 18 18 19 16 1D 91 1C 00 1B 07 20 FB 22 10 21 56 00 00 C0 00 00 00 00 00 00 00
 
 Custom_preset_name: Chrysler
-Custom_preset_module: CC1101
-Custom_preset_data: 02 0D 0B 06 08 32 07 04 14 00 13 02 12 04 11 83 10 67 15 24 18 18 19 16 1D 91 1C 00 1B 07 20 FB 22 10 21 56 00 00 C0 00 00 00 00 00 00 00
-
-Custom_preset_name: VAG - new
 Custom_preset_module: CC1101
 Custom_preset_data: 02 0D 0B 06 08 32 07 04 14 00 13 02 12 04 11 83 10 67 15 24 18 18 19 16 1D 91 1C 00 1B 07 20 FB 22 10 21 56 00 00 C0 00 00 00 00 00 00 00
 
