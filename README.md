@@ -4,7 +4,7 @@ Optimized for key fob capture at maximum range with tight noise filtering.
 
 ---
 
-**❗ For all these presets, I highly recommend using an external CC1101 antenna, otherwise it might not work properly. ❗**
+## **❗ For all these presets, I highly recommend using an external CC1101 antenna, otherwise it might not work properly. ❗**
 
 ---
 
