@@ -66,8 +66,6 @@ For generic capture on an unknown vehicle, use **preset 2**.
 
 If you are far from the target or in a noisy environment, preset 2 will outperform any brand-specific preset.
 
-For older VAG vehicles (pre-2009), use **VAG 434** with frequency set to 434.42 MHz.
-
 ---
 
 ## Notes
