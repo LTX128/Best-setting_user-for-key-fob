@@ -42,7 +42,7 @@ Same base as preset 1 but with the CC1101 TEST registers (`0x2C`, `0x2D`, `0x2E`
 
 | Preset | Modulation | BW | Notes |
 |---|---|---|---|
-| AM_1 / AM_2 | OOK | 325 kHz | Standard wide-band OOK, firmware defaults. No filtering, picks up a lot of noise. |
+| AM_1 / AM_2 | OOK | 325 kHz | Disabled by default. Standard wide-band OOK, firmware defaults. No filtering, picks up a lot of noise. |
 | A1 | OOK | 101 kHz | General purpose OOK capture. Narrower than AM_1/AM_2, more selective. Useful for unknown devices. |
 | F1 | 2-FSK | 200 kHz | FSK capture, high deviation (~50 kHz). Targets garage doors, barriers and alarm remotes. |
 | F2 | 2-FSK | 200 kHz | FSK variant of F1 with slightly lower data rate. Try if F1 misses a signal. |
