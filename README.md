@@ -28,11 +28,11 @@ Restart the Flipper.
 
 ## Custom presets
 
-### 🟢 Preset 1 - OOK 433 Long Range
+### 🟢 Preset 1
 
 OOK/ASK optimized for 433.92 MHz. Narrow bandwidth (58 kHz), max LNA gain, AGC tuned for weak signals. Good all-around for key fob capture.
 
-### 🟢 Preset 2 - OOK 433 Ultra ( Recommended )
+### 🟢 Preset 2 ( Recommended )
 
 Same base as preset 1 but with the CC1101 TEST registers (`0x2C`, `0x2D`, `0x2E`) correctly set for narrow bandwidth operation. Without these the chip analog front-end is not fully calibrated regardless of other settings. This is what gives a real sensitivity gain over any standard preset. Best choice for long range capture and noisy environments like parking lots.
 
@@ -52,25 +52,13 @@ Same base as preset 1 but with the CC1101 TEST registers (`0x2C`, `0x2D`, `0x2E`
 
 ---
 
-### Vehicle-specific presets
-
-Each brand preset is tuned to the actual modulation, data rate and deviation used by that manufacturer:
+### Specific presets
 
 | Preset | Modulation | Data rate | Frequency | Notes |
 |---|---|---|---|---|
 | VAG 434 | OOK | 2.4 kBaud | **434.42 MHz** | VW, Skoda, Seat — use with 434420000 |
-| BMW - Mini | 2-FSK | 4.8 kBaud | 433.92 MHz | F/G-series, all Mini |
-| Mercedes-Benz | 2-FSK | 9.6 kBaud | 433.92 MHz | W212/W213/W205 and newer |
-| Honda | OOK | 1.2 kBaud | 433.92 MHz | Civic, CR-V, Jazz EU |
-| AUDI - new | OOK | 2.4 kBaud | 433.92 MHz | All VAG platform EU |
-| Land Rover | OOK | 4.8 kBaud | 433.92 MHz | Defender, Discovery, Range Rover |
-| Toyota - Lexus | OOK | 4.8 kBaud | 433.92 MHz | Yaris, RAV4, Prius, Lexus IS/NX |
-| Subaru | OOK | 1.2 kBaud | 433.92 MHz | Impreza, Forester, Outback EU |
-| Mitsubishi | OOK | 2.4 kBaud | 433.92 MHz | ASX, Outlander, Eclipse EU |
-| Cadillac | OOK | 4.8 kBaud | 433.92 MHz | Export EU models |
-| Chrysler | OOK | 4.8 kBaud | 433.92 MHz | Jeep, Dodge EU models |
 
-All vehicle presets include the CC1101 TEST registers (`0x2C 0x2D 0x2E`) and max LNA gain configuration.
+All presets include the CC1101 TEST registers (`0x2C 0x2D 0x2E`) and max LNA gain configuration.
 
 #### VAG 434 - Details
 
@@ -80,11 +68,11 @@ This preset is specifically built for older VAG vehicles (VW Golf, Polo, Passat,
 
 ## Usage
 
-For generic capture on an unknown vehicle, use **preset 2**.
+For generic capture on an unknown vehicle or other, use **preset 2 or A1**.
 
 If you are far from the target or in a noisy environment, preset 2 will outperform any brand-specific preset.
 
-For older VAG vehicles use **VAG 434** with frequency set to 434.42 MHz.
+For VAG vehicles use **VAG 434** with frequency set to 434.42 MHz.
 
 For garage doors, barriers or alarm remotes, try **F3** first.
 
@@ -93,7 +81,7 @@ For garage doors, barriers or alarm remotes, try **F3** first.
 ## Notes
 
 - Tested on Momentum firmware & ARF firmware
-- Antenna matters more than any preset.
+**- Antenna matters more than any preset.**
 - These presets are receive-only optimized.
 
 ---
