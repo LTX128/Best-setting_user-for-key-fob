@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Update Traffic
-        uses: sangonzal/repository-traffic-action@v0.3.4
+        uses: sangonzal/repository-traffic-action@master
         with:
           TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
           REPOSITORY: LTX128/Best-setting_user-for-key-fob
