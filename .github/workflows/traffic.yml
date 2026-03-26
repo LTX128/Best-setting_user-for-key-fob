@@ -1,18 +1,19 @@
-name: Global Traffic Graph
+name: GitHub Metrics
 on:
   schedule:
     - cron: "0 * * * *" # Toutes les heures
-  workflow_dispatch: # Pour le lancer à la main
-
+  workflow_dispatch:
 jobs:
-  run:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Update Traffic
-        uses: sangonzal/repository-traffic-action@master
+      - uses: lowlighter/metrics@latest
         with:
-          TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
-          REPOSITORY: LTX128/Best-setting_user-for-key-fob
+          token: ${{ secrets.TRAFFIC_TOKEN }}
+          user: LTX128
+          repo: Best-setting_user-for-key-fob
+          plugin_traffic: yes
+          base: "" # On ne veut que le graphique de trafic
+          filename: github-metrics-traffic.svg
