@@ -1,20 +1,19 @@
-name: Update GitHub Views Graph
-
+name: Metrics
 on:
   schedule:
-    - cron: "0 * * * *" # S'exécute toutes les heures
-  workflow_dispatch: # Permet de le lancer manuellement pour tester
-
+    - cron: "0 * * * *" # Toutes les heures
+  workflow_dispatch: # Permet de lancer manuellement
 jobs:
-  update-graph:
+  github-metrics:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
-
-      - name: GitHub Views Counter
-        uses: gayanvoice/github-stats-action@v1.0.1
+      - uses: lowlighter/metrics@latest
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          REPOSITORY: LTX128/Best-setting_user-for-key-fob
-          # Ce script va créer une branche 'gh-pages' ou 'data' avec tes stats
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: LTX128
+          repo: Best-setting_user-for-key-fob
+          template: classic
+          base: "" # On vide la base pour ne garder que ce qu'on veut
+          plugin_traffic: yes # C'est ICI que les vues sont gérées
