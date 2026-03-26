@@ -1,0 +1,18 @@
+name: Global Traffic Graph
+on:
+  schedule:
+    - cron: "0 * * * *" # S'exécute toutes les heures pile
+  workflow_dispatch: # Permet de le lancer à la main pour tester
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Update Traffic
+        uses: sangonzal/repository-traffic-action@v0.1.6
+        with:
+          TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPOSITORY: LTX128/Best-setting_user-for-key-fob
