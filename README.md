@@ -1,4 +1,4 @@
-![Stats](https://img.shields.io/badge/Views-989-blue)
+![Vues](https://komarev.com/ghpvc/?username=LTX128&repo=Best-setting_user-for-key-fob&color=blue&label=VIEWS&base=989)
 
 # Flipper Zero - SubGHz setting_user
 Custom SubGHz settings file for Flipper Zero (compatible Momentum, ARF Firmware, Unleashed, RogueMaster).
