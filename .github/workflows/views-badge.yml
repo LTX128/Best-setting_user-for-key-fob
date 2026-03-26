@@ -1,9 +1,7 @@
-name: Update Repo Views Badge
+name: Update Views Badge
 
 on:
-  schedule:
-    - cron: '0 * * * *' # toutes les heures
-  workflow_dispatch: # permet de lancer manuellement
+  workflow_dispatch:  # permet de lancer manuellement
 
 jobs:
   update-badge:
@@ -13,18 +11,17 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Get repo views
-        uses: octokit/request-action@v2
-        id: views
-        with:
-          route: GET /repos/${{ github.repository }}/traffic/views
-
-      - name: Save views count
         run: |
-          echo "VIEWS=$((${{ steps.views.outputs.total_count }} + 900))" >> $GITHUB_ENV
+          # Récupère le nombre de vues via GitHub API
+          TOTAL=$(curl -s -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/${GITHUB_REPOSITORY}/traffic/views | jq '.count')
+          # Ajoute les 900 vues existantes
+          TOTAL=$((TOTAL + 900))
+          echo "TOTAL=$TOTAL" >> $GITHUB_ENV
 
       - name: Generate badge
         run: |
-          curl -s "https://img.shields.io/badge/Views-$VIEWS-blue?style=flat-square" -o views.svg
+          curl -s "https://img.shields.io/badge/Views-$TOTAL-blue?style=flat-square" -o views.svg
 
       - name: Commit badge
         run: |
