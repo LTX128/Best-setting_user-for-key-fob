@@ -100,6 +100,6 @@ For garage doors, barriers or alarm remotes, try **F3** first.
 
 ---
 
-![Visites](https://visitor-badge.laobi.icu/badge?page_id=LTX128.Best-setting_user-for-key-fob&initial=989)
+![Visiteurs](https://api.visitorbadge.io/api/visitors?path=LTX128.Best-setting_user-for-key-fob&countColor=%23263759&initial=989)
 
 ---
