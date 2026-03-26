@@ -97,8 +97,3 @@ For garage doors, barriers or alarm remotes, try **F3** first.
 </p>
 
 ---
-
-### 📈 Stats
-![Graphique des vues](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FLTX128%2FBest-setting_user-for-key-fob&label=VIEWS&countColor=%2326313f&style=flat-square)
-
-![Evolution](https://github-readme-stats.vercel.app/api/repo-stats?username=LTX128&repo=Best-setting_user-for-key-fob&layout=thin)
