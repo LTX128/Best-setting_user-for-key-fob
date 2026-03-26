@@ -1,0 +1,20 @@
+name: Update GitHub Views Graph
+
+on:
+  schedule:
+    - cron: "0 * * * *" # S'exécute toutes les heures
+  workflow_dispatch: # Permet de le lancer manuellement pour tester
+
+jobs:
+  update-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: GitHub Views Counter
+        uses: gayanvoice/github-stats-action@v1.0.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: LTX128/Best-setting_user-for-key-fob
+          # Ce script va créer une branche 'gh-pages' ou 'data' avec tes stats
