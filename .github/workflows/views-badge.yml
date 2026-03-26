@@ -1,27 +1,23 @@
 name: Update Views Badge
 
 on:
-  workflow_dispatch:      # lancer manuellement
+  workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'  # toutes les heures
+    - cron: '0 * * * *'
 
 jobs:
   update-badge:
     runs-on: ubuntu-latest
-
     steps:
-      # 1️⃣ Récupérer le repo
       - uses: actions/checkout@v3
 
-      # 2️⃣ Récupérer le nombre de vues (sécurisé)
-      - name: Get repo views
+      - name: Get repo views safely
         run: |
           echo "Récupération des vues..."
-          API_RESPONSE=$(curl -s -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/repos/LTX128/Best-setting_user-for-key-fob/traffic/views)
+          RESPONSE=$(curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/LTX128/Best-setting_user-for-key-fob/traffic/views)
           
-          # Vérifie que l'API renvoie bien un nombre
-          COUNT=$(echo "$API_RESPONSE" | grep -o '"count":[0-9]*' | head -1 | grep -o '[0-9]*')
+          # Récupère le nombre de vues, sinon met 0
+          COUNT=$(echo "$RESPONSE" | grep -o '"count":[0-9]*' | head -1 | grep -o '[0-9]*')
           if [ -z "$COUNT" ]; then
             COUNT=0
           fi
@@ -31,7 +27,14 @@ jobs:
           echo "TOTAL=$TOTAL"
           echo "TOTAL=$TOTAL" >> $GITHUB_ENV
 
-      # 3️⃣ Générer le badge
       - name: Generate badge
         run: |
           curl -s "https://img.shields.io/badge/Views-$TOTAL-blue?style=flat-square" -o views.svg
+
+      - name: Safe commit
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add views.svg
+          git diff --cached --quiet || git commit -m "Update views badge"
+          git push || echo "Push échoué, vérifier les droits"
