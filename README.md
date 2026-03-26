@@ -1,6 +1,6 @@
 ---
 
-![Vues](https://github-readme-stats.vercel.app/api?username=LTX128&repo=Best-setting_user-for-key-fob&theme=radical&t=1)   
+![Vues](https://komarev.com/ghpvc/?username=LTX128&repo=Best-setting_user-for-key-fob&color=blue&label=REVIEWS)
 
 ---
 
