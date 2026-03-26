@@ -1,3 +1,9 @@
+## 📈 Statistiques du dépôt
+
+![Vues du dépôt](https://github-readme-stats.vercel.app/api/pin/?username=LTX128&repo=Best-setting_user-for-key-fob&theme=radical)   
+
+---
+
 # Flipper Zero - SubGHz setting_user
 Custom SubGHz settings file for Flipper Zero (compatible Momentum, ARF Firmware, Unleashed, RogueMaster).
 Optimized for key fob capture at maximum range with tight noise filtering.
