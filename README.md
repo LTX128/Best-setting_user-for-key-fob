@@ -97,10 +97,3 @@ For garage doors, barriers or alarm remotes, try **F3** first.
 </p>
 
 ---
-
----
-
-## Vues du repo
-![View](views.svg)
-
----
