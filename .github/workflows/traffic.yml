@@ -1,19 +1,17 @@
-name: GitHub Metrics
+name: Update Count
 on:
   schedule:
-    - cron: "0 * * * *" # Toutes les heures
+    - cron: "0 * * * *"
   workflow_dispatch:
 jobs:
-  github-metrics:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics@latest
+      - uses: actions/checkout@v4
+      - name: Generate Views Badge
+        uses: anton-hersh/github-views-action@v1.1
         with:
           token: ${{ secrets.TRAFFIC_TOKEN }}
-          user: LTX128
-          repo: Best-setting_user-for-key-fob
-          plugin_traffic: yes
-          base: "" # On ne veut que le graphique de trafic
-          filename: github-metrics-traffic.svg
+          repository: LTX128/Best-setting_user-for-key-fob
