@@ -1,6 +1,3 @@
-
-![Graphique des vues](https://raw.githubusercontent.com/LTX128/Best-setting_user-for-key-fob/traffic/traffic-views.svg)
-
 # Flipper Zero - SubGHz setting_user
 Custom SubGHz settings file for Flipper Zero (compatible Momentum, ARF Firmware, Unleashed, RogueMaster).
 Optimized for key fob capture at maximum range with tight noise filtering.
