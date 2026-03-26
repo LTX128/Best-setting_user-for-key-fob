@@ -1,6 +1,6 @@
 ---
 
-![Vues](https://komarev.com/ghpvc/?username=LTX128&repo=Best-setting_user-for-key-fob&color=blue&label=REVIEWS)
+![Graphique d'activité](https://github-readme-stats.vercel.app/api/pin/?username=LTX128&repo=Best-setting_user-for-key-fob)
 
 ---
 
