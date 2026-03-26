@@ -1,6 +1,4 @@
-## 📈 Statistiques du dépôt
-
-![Vues du dépôt](https://github-readme-stats.vercel.app/api/pin/?username=LTX128&repo=Best-setting_user-for-key-fob&theme=radical)   
+![Statistiques](https://github-readme-stats.vercel.app/api?username=LTX128&repo=Best-setting_user-for-key-fob&show_owner=true&theme=merko)    
 
 ---
 
