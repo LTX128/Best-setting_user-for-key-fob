@@ -1,38 +1,18 @@
-name: Update Views Badge
-
+name: Global Traffic Graph
 on:
-  workflow_dispatch:      # manuel
   schedule:
-    - cron: '0 * * * *'  # toutes les heures
+    - cron: "0 * * * *" # Toutes les heures
+  workflow_dispatch: # Pour le lancer à la main
 
 jobs:
-  update-badge:
+  run:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Checkout repo
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # 2️⃣ Récupérer les vues (safe)
-      - name: Get repo views
-        run: |
-          echo "Récupération des vues..."
-          RESPONSE=$(curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/LTX128/Best-setting_user-for-key-fob/traffic/views)
-          COUNT=$(echo "$RESPONSE" | grep -o '"count":[0-9]*' | head -1 | grep -o '[0-9]*')
-          if [ -z "$COUNT" ]; then COUNT=0; fi
-          TOTAL=$((COUNT + 900))
-          echo "TOTAL=$TOTAL"
-          echo "TOTAL=$TOTAL" >> $GITHUB_ENV
-
-      # 3️⃣ Générer le badge
-      - name: Generate badge
-        run: |
-          curl -s "https://img.shields.io/badge/Views-$TOTAL-blue?style=flat-square" -o views.svg
-
-      # 4️⃣ Commit et push safe
-      - name: Commit badge safely
-        run: |
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git add views.svg
-          git diff --cached --quiet || git commit -m "Update views badge"
-          git push || echo "Push échoué mais workflow continue"
+      - name: Update Traffic
+        uses: sangonzal/repository-traffic-action@v0.3.4
+        with:
+          TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPOSITORY: LTX128/Best-setting_user-for-key-fob
