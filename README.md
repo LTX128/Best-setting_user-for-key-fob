@@ -1,4 +1,4 @@
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FLTX128%2FBest-setting_user-for-key-fob&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+![Stats de LTX128](https://github-readme-stats.vercel.app/api/pin/?username=LTX128&repo=Best-setting_user-for-key-fob&theme=radical)
 
 # Flipper Zero - SubGHz setting_user
 Custom SubGHz settings file for Flipper Zero (compatible Momentum, ARF Firmware, Unleashed, RogueMaster).
