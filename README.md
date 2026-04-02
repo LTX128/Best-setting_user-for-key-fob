@@ -57,7 +57,7 @@ Same base as preset 1 but with the CC1101 TEST registers (`0x2C`, `0x2D`, `0x2E`
 | Preset | Modulation | Data rate | Frequency | Notes |
 |---|---|---|---|---|
 | VAG 434 | OOK | 2.4 kBaud | **434.42 MHz** | VW, Skoda, Seat — use with 434420000 |
-| Honda 1, 2 | OOK | 2.4 kBaud | **433.92 MHz, ...** | Honda |
+| Honda 1 & 2 | OOK | 2.4 kBaud | **433.92 MHz, ...** | Honda |
 
 All presets include the CC1101 TEST registers (`0x2C 0x2D 0x2E`) and max LNA gain configuration.
 
